@@ -17,19 +17,43 @@ body {
     ;
     width: 100vw;
     height: 100vh;
+
 }
 
 .image-box {
     grid-area: image-box;
-    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #7A47C4;
 }
 
 .sidebar {
     grid-area: sidebar;
-    background-color: blueviolet;
+    background-color: #D3B8FB;
+}
+
+.slider-container {
+    grid-area: slider;
+    margin-top: 20px;
+    padding: 20px;
 }
 
 .slider {
-    grid-area: slider;
-    background-color: chartreuse;
+    width: 100%;
+}
+
+.image {
+    max-width: 80%;
+}
+
+.upload-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+
 }
