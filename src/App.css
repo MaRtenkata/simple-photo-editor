@@ -1,1 +1,35 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+}
+
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+        'image-box sidebar'
+        'slider sidebar'
+    ;
+    width: 100vw;
+    height: 100vh;
+}
+
+.image-box {
+    grid-area: image-box;
+    background-color: aqua;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: blueviolet;
+}
+
+.slider {
+    grid-area: slider;
+    background-color: chartreuse;
+}
