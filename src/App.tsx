@@ -103,14 +103,17 @@ function App() {
     <div className='container'>
       <div className='image-box'>
         {file !== null ? (
-          <div>
+          <div className='image-box-content'>
             <img
               className={`image ${file && 'image-filtered'}`}
               src={file && URL.createObjectURL(file)}
               alt={file?.name || 'Uploaded Image'}
               style={{ '--filters': getFilters() } as React.CSSProperties}
             />
-            <button onClick={() => dispatch(clearFileMetadata())}>
+            <button
+              className='image-box-btn'
+              onClick={() => dispatch(clearFileMetadata())}
+            >
               Remove Image
             </button>
           </div>
